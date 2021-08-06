@@ -6,6 +6,6 @@ easimg: 메뉴 클릭
 
 iconicons: 메일 아이콘
 
-kquery: 메뉴 선택시 슬라이드 무빙
+jquery: 콘텐츠 올라오기
 
-wow: 화면 올라오기
+wow: 메뉴 선택시 슬라이드 무빙
