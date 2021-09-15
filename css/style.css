@@ -51,8 +51,8 @@ h6 {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
+  right: 100px;
+  bottom: 32.5px;
   transition: background 0.5s;
   z-index: 11;
 }
