@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head> 
+  <title>IIS 10.0 자세한 오류 - 403.14 - Forbidden</title> 
+  <style type="text/css"> 
+  <!-- 
+  body{margin:0;font-size:.7em;font-family:Verdana,Arial,Helvetica,sans-serif;} 
+  code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
+  .config_source code{font-size:.8em;color:#000000;} 
+  pre{margin:0;font-size:1.4em;word-wrap:break-word;} 
+  ul,ol{margin:10px 0 10px 5px;} 
+  ul.first,ol.first{margin-top:5px;} 
+  fieldset{padding:0 15px 10px 15px;word-break:break-all;} 
+  .summary-container fieldset{padding-bottom:5px;margin-top:4px;} 
+  legend.no-expand-all{padding:2px 15px 4px 10px;margin:0 0 0 -12px;} 
+  legend{color:#333333;;margin:4px 0 8px -12px;_margin-top:0px; 
+  font-weight:bold;font-size:1em;} 
+  a:link,a:visited{color:#007EFF;font-weight:bold;} 
+  a:hover{text-decoration:none;} 
+  h1{font-size:2.4em;margin:0;color:#FFF;} 
+  h2{font-size:1.7em;margin:0;color:#CC0000;} 
+  h3{font-size:1.4em;margin:10px 0 0 0;color:#CC0000;} 
+  h4{font-size:1.2em;margin:10px 0 5px 0; 
+  }#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS",Verdana,sans-serif; 
+   color:#FFF;background-color:#5C87B2; 
+  }#content{margin:0 0 0 2%;position:relative;} 
+  .summary-container,.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;} 
+  .content-container p{margin:0 0 10px 0; 
+  }#details-left{width:35%;float:left;margin-right:2%; 
+  }#details-right{width:63%;float:left;overflow:hidden; 
+  }#server_version{width:96%;_height:1px;min-height:1px;margin:0 0 5px 0;padding:11px 2% 8px 2%;color:#FFFFFF; 
+   background-color:#5A7FA5;border-bottom:1px solid #C1CFDD;border-top:1px solid #4A6C8E;font-weight:normal; 
+   font-size:1em;color:#FFF;text-align:right; 
+  }#server_version p{margin:5px 0;} 
+  table{margin:4px 0 4px 0;width:100%;border:none;} 
+  td,th{vertical-align:top;padding:3px 0;text-align:left;font-weight:normal;border:none;} 
+  th{width:30%;text-align:right;padding-right:2%;font-weight:bold;} 
+  thead th{background-color:#ebebeb;width:25%; 
+  }#details-right th{width:20%;} 
+  table tr.alt td,table tr.alt th{} 
+  .highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
+  .clear{clear:both;} 
+  .preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
+  --> 
+  </style> 
+   
+  </head> 
+  <body> 
+  <div id="content"> 
+  <div class="content-container"> 
+    <h3>HTTP 오류 403.14 - Forbidden</h3> 
+    <h4>웹 서버가 이 디렉터리의 내용을 표시하지 못하도록 구성되었습니다.</h4> 
+  </div> 
+  <div class="content-container"> 
+   <fieldset><h4>가능성이 높은 원인:</h4> 
+    <ul> 	<li>요청된 URL에 대해 기본 문서가 구성되지 않았으며 서버에서 디렉터리 검색 기능이 사용되지 않습니다.</li> </ul> 
+   </fieldset> 
+  </div> 
+  <div class="content-container"> 
+   <fieldset><h4>가능한 해결 방법:</h4> 
+    <ul>
+      <li>디렉터리 검색 기능을 사용하지 않으려면 기본 문서가 구성되어 있고 파일이 존재해야 합니다.</li>
+      <li>IIS 관리자를 사용하여 디렉터리 검색을 사용하도록 설정하십시오.<ol>
+        <li>IIS 관리자를 엽니다.</li>
+        <li>[기능] 보기에서 [디렉터리 검색]을 두 번 클릭합니다.</li>
+        <li>[디렉터리 검색] 페이지의 [작업] 창에서 [사용]을 클릭합니다.</li>
+      </ol>
+      </li>
+      <li>사이트 또는 응용 프로그램 구성 파일에서 configuration/system.webServer/directoryBrowse@enabled 특성이 true로 설정되었는지 확인하십시오.</li>
+    </ul> 
+   </fieldset> 
+  </div> 
+   
+  <div class="content-container"> 
+   <fieldset><h4>자세한 오류 정보:</h4> 
+    <div id="details-left"> 
+     <table border="0" cellpadding="0" cellspacing="0"> 
+      <tbody><tr class="alt"><th>모듈</th><td>&nbsp;&nbsp;&nbsp;DirectoryListingModule</td></tr> 
+      <tr><th>알림</th><td>&nbsp;&nbsp;&nbsp;ExecuteRequestHandler</td></tr> 
+      <tr class="alt"><th>처리기</th><td>&nbsp;&nbsp;&nbsp;StaticFile</td></tr> 
+      <tr><th>오류 코드</th><td>&nbsp;&nbsp;&nbsp;0x00000000</td></tr> 
+       
+     </tbody></table> 
+    </div> 
+    <div id="details-right"> 
+     <table border="0" cellpadding="0" cellspacing="0"> 
+      <tbody><tr class="alt"><th>요청한 URL</th><td>&nbsp;&nbsp;&nbsp;http://schoolon.kr:80/dhtml/</td></tr> 
+      <tr><th>실제 경로</th><td>&nbsp;&nbsp;&nbsp;D:\Service\SchoolOn\SchoolOn2015\dhtml\</td></tr> 
+      <tr class="alt"><th>로그온 방법</th><td>&nbsp;&nbsp;&nbsp;익명</td></tr> 
+      <tr><th>로그온 사용자</th><td>&nbsp;&nbsp;&nbsp;익명</td></tr> 
+       
+     </tbody></table> 
+     <div class="clear"></div> 
+    </div> 
+   </fieldset> 
+  </div> 
+   
+  <div class="content-container"> 
+   <fieldset><h4>추가 정보:</h4> 
+    이 오류는 URL에 문서가 지정되지 않았고 웹 사이트나 응용 프로그램에 기본 문서가 지정되지 않았으며 웹 사이트나 응용 프로그램에 대해 디렉터리 나열 기능이 사용되지 않는 경우 발생합니다. 서버 콘텐츠의 보안을 유지하기 위해 이 설정이 사용되지 않도록 설정했을 수 있습니다. 
+    <p><a href="http://go.microsoft.com/fwlink/?LinkID=62293&amp;IIS70Error=403,14,0x00000000,14393">상세 정보 보기 »</a></p> 
+     
+   </fieldset> 
+  </div> 
+  </div> 
+   
+   
+  </body><whale-quicksearch translate="no"></whale-quicksearch></html>
