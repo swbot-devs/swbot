@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>swbot devs 광고</title>
+  <script language="JavaScript">
+  function setCookie(name, value, expiredays) {
+    var date = new Date();
+    date.setDate(date.getDate() + expiredays);
+    document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString();
+  }
+    
+  function closePopup() {
+    if (document.getElementById("check").value) {
+      setCookie("popupYN", "N", 1);
+      self.close();
+    }
+  }
+    </script>
+</head>
+<body>
+
+<p style="text-align:left; font-size: medium ; color: darkorange"><b>swbot devs에서 당신을 기다립니다!</b></p>
+      
+
+<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MzFfMjM3%2FMDAxNjMwNDAxNzcxNTIy.oyGFU-1OmHrk3_FStKLQpVeljwgw4QkRjG2QBF_0yWkg.71DKdU2E73rg9a1Mt64x45SZWTOnRD7JOmYj5Skvo2og.JPEG.st_barem%2FLSH_0193-5.jpg&type=sc960_832" style= "width:100%; margin-top:0px"/>
+
+<br>
+
+<input type="checkbox" id="check" align="right" onclick="closePopup();">
+
+<font style="text-align:right; font-size: larger">24시간 동안 다시 열람하지 않습니다.</font>
+
+
+</body>
+</html>

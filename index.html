@@ -29,9 +29,35 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"><script type="text/javascript">
+  
+  <script type="text/javascript">
+    function getCookie(name) {
+      var cookie = document.cookie;
+
+      if (document.cookie != "") {
+        var cookie_array = cookie.split("; ");
+        for ( var index in cookie_array) {
+          var cookie_name = cookie_array[index].split("=");
+
+          if (cookie_name[0] == "popupYN") {
+            return cookie_name[1];
+          }
+        }
+      }
+      return ;
+    }
+
+    function openPopup(url) { 
+      var cookieCheck = getCookie("popupYN");
+      if (cookieCheck != "N")
+      window.open(url, '', 'width=450,height=750,left=0,top=0')
+    }
+  </script>
+
 </head>
 
+<body onload=javascript:openPopup('popup.html')>
 <body>
 
   <!--==========================
@@ -262,7 +288,44 @@
               <a target="_blank" href="https://www.twitch.tv/sw108"><i class="fa fa-twitch"></i></a>
               <a target="_blank" href="https://github.com/swbot-devs/"><i class="fa fa-github"></i></a>
               <a href="mailto:swbot.cs@gmail.com" title="swbot.cs@gmail.com"><i class="far fa-envelope"></i></a>
-              <a target="_blank" href="https://discord.com/download" title="디스코드 다운로드"><i class="fab fa-discord"></i> <i class="fas fa-download"></i></a>
+              <a 
+              
+               <html>
+	  
+	  <head>
+		  <script type="text/javascript">
+			  function getCookie(name)
+			  {
+				  var cookie = document.cookie;
+						  if (document.cookie != "") {
+							  var cookie_array = cookie.split("; ");
+							  for ( var index in cookie_array) {
+								  var cookie_name = cookie_array[index].split("=");
+								  if (cookie_name[0] == "popupYN") {
+									  return cookie_name[1]; } }
+						  }
+				  return ;
+			  }
+	  
+			 function openPopup(url)
+				  {
+				  var cookieCheck = getCookie("popupYN");
+				  if (cookieCheck != "N") window.open(url, '', 'width=450,height=520,left=0,top=0')
+				  }
+		  </script>
+		</head>
+		
+		
+		
+		<body onload=javascript:openPopup('popup.html')>
+		
+		
+		
+		
+		</body>
+		
+</html>
+	target="_blank" href="https://discord.com/download" title="디스코드 다운로드"><i class="fab fa-discord"></i> <i class="fas fa-download"></i></a>
             </div>
 
           </div>
