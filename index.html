@@ -58,7 +58,6 @@
 </head>
 
 <body onload=javascript:openPopup('popup.html')>
-<body>
 
   <!--==========================
   Header
@@ -288,44 +287,7 @@
               <a target="_blank" href="https://www.twitch.tv/sw108"><i class="fa fa-twitch"></i></a>
               <a target="_blank" href="https://github.com/swbot-devs/"><i class="fa fa-github"></i></a>
               <a href="mailto:swbot.cs@gmail.com" title="swbot.cs@gmail.com"><i class="far fa-envelope"></i></a>
-              <a 
-              
-               <html>
-	  
-	  <head>
-		  <script type="text/javascript">
-			  function getCookie(name)
-			  {
-				  var cookie = document.cookie;
-						  if (document.cookie != "") {
-							  var cookie_array = cookie.split("; ");
-							  for ( var index in cookie_array) {
-								  var cookie_name = cookie_array[index].split("=");
-								  if (cookie_name[0] == "popupYN") {
-									  return cookie_name[1]; } }
-						  }
-				  return ;
-			  }
-	  
-			 function openPopup(url)
-				  {
-				  var cookieCheck = getCookie("popupYN");
-				  if (cookieCheck != "N") window.open(url, '', 'width=450,height=520,left=0,top=0')
-				  }
-		  </script>
-		</head>
-		
-		
-		
-		<body onload=javascript:openPopup('popup.html')>
-		
-		
-		
-		
-		</body>
-		
-</html>
-	target="_blank" href="https://discord.com/download" title="디스코드 다운로드"><i class="fab fa-discord"></i> <i class="fas fa-download"></i></a>
+              <a target="_blank" href="https://discord.com/download" title="디스코드 다운로드"><i class="fab fa-discord"></i> <i class="fas fa-download"></i></a>
             </div>
 
           </div>
@@ -342,47 +304,47 @@
   </footer><!-- #footer -->
 
   <!-- Channel Plugin Scripts -->
-<script>
-  (function() {
-    var w = window;
-    if (w.ChannelIO) {
-      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-    }
-    var ch = function() {
-      ch.c(arguments);
-    };
-    ch.q = [];
-    ch.c = function(args) {
-      ch.q.push(args);
-    };
-    w.ChannelIO = ch;
-    function l() {
-      if (w.ChannelIOInitialized) {
-        return;
+  <script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
       }
-      w.ChannelIOInitialized = true;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-      s.charset = 'UTF-8';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-    if (document.readyState === 'complete') {
-      l();
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', l);
-    } else {
-      window.addEventListener('DOMContentLoaded', l, false);
-      window.addEventListener('load', l, false);
-    }
-  })();
-  ChannelIO('boot', {
-    "pluginKey": "139f573a-24c2-4671-862e-b3151d2708f6"
-  });
-</script>
-<!-- End Channel Plugin -->
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "139f573a-24c2-4671-862e-b3151d2708f6"
+    });
+  </script>
+  <!-- End Channel Plugin -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
