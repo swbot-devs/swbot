@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img border="0" src="https://i.ibb.co/WtCNz55/jdw.jpg" alt="JEONG DONG WON" class="image">
+  <div class="overlay">
+    <a class="text" style="text-align: center; font-size: 20px; text-decoration: none; color: #ffffff">안녕하세요<br>swbot devs에 입사하신 걸 진심으로 환영합니다.<br><br>저희 swbot devs는 초보개발자분들이<br>어느 정도 코딩에 기본 뼈대를 세울 수가 있도록<br>도와주는 그룹입니다.<br><br>아직은 활동을 시작한 지 얼마 되지 않아<br>조금 어설픈 부분이 있더라도<br>이해해 주시기 바랍니다.<br><br>“코딩을 즐겁게 하는 그룹”<br><br>“배려와 나눔으로 코딩을 배우는 그룹”<br><br>의 모습으로 발전해 가고 있습니다.<br><br>swbot devs 모두의 헌신적인 협조와 노력으로<br>가꾸어 가는 행복한 그룹으로<br>믿음과 신뢰를 주는 그룹을 만들어 가기 위해<br>최선의 노력을 다하겠습니다.<br><br>감사합니다.<br><br>swbot devs main developer seongwon lee.</a>
+  </div>
+</div>
+
+</body>
+</html>
