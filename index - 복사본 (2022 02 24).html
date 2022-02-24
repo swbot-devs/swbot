@@ -59,7 +59,14 @@
     function popup1() {
       var win = window.open("popup/popup1.html", "a", "width=450, height=300, left=100, top=50");
       setTimeout(function() { win.close();}, 1800000); }
-      <!-- 1800000 ms is 1,800 s is 30 m -->
+
+    function popup2() {
+      var win = window.open("popup/popup2.html", "b", "width=350, height=50, left=100, top=50");
+      setTimeout(function() { win.close();}, 300000); }
+
+    function popup3() {
+      var win = window.open("popup/popup3.html", "c", "width=350, height=50, left=100, top=50");
+      setTimeout(function() { win.close();}, 300000); }
   </script>
 
 </head>
@@ -133,7 +140,7 @@
                 <span>seongwon lee</span>
                 <div class="social">
                   <p style="text-decoration: none; color: #ffffff">OWNER SOCIAL</p>
-                  <a href="tel:050408051654 -> 0"><font color="#fffff" size="2"><i class="fas fa-phone-square-alt"></i> <strong>Phone: </strong>050-40805-1654<br></font></a>
+                  <a href="tel:050408051654"><font color="#fffff" size="2"><i class="fas fa-phone-square-alt"></i> <strong>Phone: </strong>050-40805-1654<br></font></a>
                   <a href="sns:050408051654"><font color="#fffff" size="2"><i class="far fa-comment-dots"></i> <strong>Message: </strong>050-40805-1654<br></font></a>
                   <a target="_blank" href="https://discord.gg/gRb6BcrJs6"><i class="fab fa-discord"></i></a>
                   <a target="_blank" href="https://www.instagram.com/seongwon108/"><i class="fa fa-instagram"></i></a>
@@ -304,8 +311,9 @@
             <h4><i class="fas fa-link"></i> SEONGWON LEE의 페이지</h4>
             <div class="social-links">
               <p><a target="_blank" href="http://swf.서버.한국" title="단일페이지"><i class="fas fa-window-maximize"></i></a>단일페이지</p>
-              <p onMouseOut='this.innerHTML="<a><i class=\"fas fa-server\"></i></a>마인크래프트 서버 1"' onMouseOver='this.innerHTML="<a><i class=\"fas fa-server\"></i></a>m.swf.서버.한국"'><a><i class="fas fa-server"></i></a>마인크래프트 서버 1</p>
-              <p onMouseOut='this.innerHTML="<a><i class=\"fas fa-server\"></i></a>마인크래프트 서버 2"' onMouseOver='this.innerHTML="<a><i class=\"fas fa-server\"></i></a>s.swf.서버.한국"'><a><i class="fas fa-server"></i></a>마인크래프트 서버 2</p>
+              <a target="_blank" onclick="popup2();" title="마인크래프트 서버 1"><i class="fas fa-server"></i></a>마인크래프트 서버 1</p>
+              <p href="#" onMouseOut='this.innerHTML="마인크래프트 서버 1"' onMouseOver='this.innerHTML="m.swf.서버.한국"'>마인크래프트 서버 1</p>
+              <p><a target="_blank" onclick="popup3();" title="마인크래프트 서버 2"><i class="fas fa-server"></i></a>마인크래프트 서버 2</p>
               <p><a target="_blank" href="https://swbot-devs.github.io/swbot/" title="웹사이트(깃허브 호스트)"><i class="fab fa-github"></i></a>웹사이트(깃허브 호스트)</p>
               <p><a target="_blank" href="https://swbot-devs.github.io/swbot-devs-member/" title="sebot devs 멤버 정보 웹사이트(깃허브 호스트)"><i class="fab fa-github"></i> <i class="fas fa-file-code"></i></a>sebot devs 멤버 정보 웹사이트(깃허브 호스트)</p>
               <p><a target="_blank" href="https://swbot-devs.github.io/sw_rep/" title="sw 자료호스팅(깃허브 호스트)"><i class="fab fa-github" aria-hidden="true"></i> <i class="fas fa-file-code" aria-hidden="true"></i></a>sw 자료호스팅(깃허브 호스트)</p>
