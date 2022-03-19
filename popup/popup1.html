@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>swbot devs's Popup</title>
+  <script language="JavaScript">
+  function setCookie(name, value, expiredays) {
+    var date = new Date();
+    date.setDate(date.getDate() + expiredays);
+    document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString();
+  }
+    
+  function closePopup() {
+    if (document.getElementById("check").value) {
+      setCookie("popupYN", "N", 1);
+      self.close();
+    }
+  }
+</script>
+
+</head>
+<body>
+
+  <p style="text-align:left; font-size: medium ; color: darkorange"><b>swbot devs에서 당신을 기다립니다!</b></p>
+  <h1 style="text-align:left; color: darkorange"><b>swbot devs이란?</b></h1>
+  <h3 style="text-align:left; color: darkorange"><b>python, html, css 등으로 디스코드 봇과 관련됀
+  <br>봇을 만드는 단체입니다.<br><br></h3>
+  <a target="_blank" href="https://forms.gle/tR1sfqGFBrKv2his5"><h3 style="text-align:left; color: darkorange"><b>swbot devs 입사 링크</b></h3></a>
+  <br>
+
+  <input type="checkbox" id="check" align="right" onclick="self.close();"><font style="text-align:right; font-size: larger">닫기</font>
+  <!-- <input type="checkbox" id="check" align="right" onclick="closePopup();"><font style="text-align:right; font-size: larger">24시간 동안 다시 열람하지 않습니다.</font> -->
+
+</body>
+</html>
