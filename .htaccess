@@ -1,3 +1,0 @@
-ErrorDocument 403.14 https://swbot-devs.github.io/sw_rep/403.14.html
-ErrorDocument 404 https://swbot-devs.github.io/sw_rep/404.html
-ErrorDocument 410 https://swbot-devs.github.io/sw_rep/410.html
